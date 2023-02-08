@@ -35,12 +35,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Agumon is a Reptile Digimon. It has grown up and become able to walk on two legs, and has an appearance like a tiny dinosaur"
-                android:textSize="13sp"/>
+                android:textSize="13sp"
+                android:textStyle="italic"/>
 
             <RatingBar
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:numStars="2"
+                android:rating="1"/>
+
+
+
 
 
         </LinearLayout>
