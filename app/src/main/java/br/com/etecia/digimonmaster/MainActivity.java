@@ -17,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         idListaValores = findViewById(R.id.idListaValores);
-        idListaValores.setAdapter(adapter);
         Adaptador adapter = new Adaptador();
+        idListaValores.setAdapter(adapter);
+
 
     }
     public class Adaptador extends BaseAdapter {
