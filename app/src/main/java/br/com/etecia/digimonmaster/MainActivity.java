@@ -20,20 +20,22 @@ public class MainActivity extends AppCompatActivity {
     "Um Digimon Mamífero caracterizado pelas suas grandes orelhas. Consegue utilizá-as como asas e voar, mas, como só vai a uma velocidade de 1 km/h, diz-se que mais lhe vale andar.",
     "um digimon pintainho cujas asas se desenvolveram de modo a parecerem braços.", "Um pequeno Digimon que derramou a penugem que cobria a sua superfície e cujo corpo ficou maior. Ainda é incapaz de lutar."};
     int imagem[] = {R.drawable.agumon, R.drawable.patamon, R.drawable.piyomon, R.drawable.koromon};
-    double rating[] = {0.4, 1.0, 2.0, 0.7};
+    double rating[] = {0.4, 1.0, 2.0, 1.7};
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //Apresentando a Lista para o Java
         idListaValores = findViewById(R.id.idListaValores);
+        //Instânciando o Adaptador
         Adaptador adapter = new Adaptador();
         idListaValores.setAdapter(adapter);
 
 
     }
+
     public class Adaptador extends BaseAdapter {
 
         @Override
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         public long getItemId(int i) {
             return 0;
         }
-        @SuppressLint("MissingInflatedId")
+        @SuppressLint("MissingInflatedId") // o que é isso ?
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
             //Variaveis do modelo
@@ -59,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             ImageView DigimonImagem;
 
             //Ligando o modelo com o adaptador
-            View v = getLayoutInflater().inflate(R.layout.modelo_digimon, null);
+            View v = getLayoutInflater().inflate(R.layout.modelo_digimon, null); //oque é inflar ?
 
 
             //Apresentado as variavéis
@@ -68,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             DigimonDescricao = v.findViewById(R.id.MDescricao);
             DigimonRating = v.findViewById(R.id.MRating);
 
-            //Inserindo os valores das variáveis do Java
+            //Inserindo os valores nas variáveis do Java
             DigimonTitulo.setText(titulo[i]);
             DigimonImagem.setImageResource(imagem[i]);
             DigimonDescricao.setText(descricao[i]);
