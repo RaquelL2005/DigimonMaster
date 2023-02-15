@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RatingBar;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     ListView idListaValores;
@@ -41,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
+            TextView MTitulo, MDescricao;
+            RatingBar MRating;
+            ImageView MImagem;
+
+
             return null;
         }
     }

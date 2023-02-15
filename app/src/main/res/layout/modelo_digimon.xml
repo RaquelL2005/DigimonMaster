@@ -16,7 +16,8 @@
             android:layout_height="130dp"
             android:layout_margin="3dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/agumon" />
+            android:src="@drawable/agumon"
+            android:id="@+id/MImagem"/>
 
 
         <LinearLayout
@@ -29,14 +30,16 @@
                 android:layout_height="wrap_content"
                 android:text="Agumon"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:id="@+id/MTitulo"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Agumon is a Reptile Digimon. It has grown up and become able to walk on two legs, and has an appearance like a tiny dinosaur"
                 android:textSize="13sp"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                android:id="@+id/MDescricao"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -47,13 +50,15 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:numStars="2"
-                    android:rating="1" />
+                    android:rating="1"
+                    android:id="@+id/MRating"/>
 
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_baseline_share" />
+                    android:src="@drawable/ic_baseline_share"
+                    />
 
             </LinearLayout>
 
